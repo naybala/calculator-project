@@ -7,9 +7,14 @@
 }
 body{
     background-color: #000000;
+   
+}
+.container{
+    width: 400px;
+    margin: 0 auto;
 }
 .calc{
-    width: 400px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .display{
@@ -47,6 +52,48 @@ body{
 .key:active{
     background-color: #33333390;
 }
-@media (max-width: 700px){
+.zero{
+    width: 190px;
+}
+@media (max-width:900px) and (min-width:699px){
+    body{
+        margin-top: 200px;
+    }
+}
+@media (max-width:700px) and (min-width:400px){
   
+    .key{
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 80px;
+    }
+    .zero{
+        width: 190px;
+    }
+}
+@media (max-width:399px) and (min-width:300px){
+    body{
+        margin-top: 50px;
+    }
+    .container{
+        width: 240px;
+        margin: 0 auto;
+    }
+    .display{
+        text-align: right;
+        font-size: 50px;
+        
+    }
+    .key{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50px;
+        margin: 3px;
+        font-size: 20px;
+    }
+    .zero{
+        width: 100px;
+    }
 }
