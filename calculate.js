@@ -9,7 +9,7 @@ function showDisplay(x) {
     if (displayBox.innerHTML == 0) {
         return displayBox.innerHTML = x;
     } else if (operator.includes(x) && operator.includes(lastIndex)) {
-        console.log(current.substring(0, current.length - 1) + x);
+        // console.log(current.substring(0, current.length - 1) + x);
         return displayBox.innerHTML = `${current.substring(0, current.length - 1)}${x}`;
     }
     return displayBox.innerHTML += x;
@@ -23,6 +23,8 @@ function calculate() {
         alert("Your Input is wrong");
     }
 }
+
+
 
 function allClear() {
     displayBox.innerHTML = 0;
