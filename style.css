@@ -52,6 +52,9 @@ body{
 .key:active{
     background-color: #33333390;
 }
+.allClear{
+    width: 190px;
+}
 .zero{
     width: 190px;
 }

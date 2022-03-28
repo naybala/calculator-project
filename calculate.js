@@ -1,5 +1,5 @@
 let displayBox = document.querySelector(".display");
-let operator = ["+", "-", "*", "/", "%", "."];
+let operator = ["+", "-", "*", "/", "."];
 
 function showDisplay(x) {
 
