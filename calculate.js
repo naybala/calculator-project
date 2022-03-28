@@ -2,14 +2,12 @@ let displayBox = document.querySelector(".display");
 let operator = ["+", "-", "*", "/", "."];
 
 function showDisplay(x) {
-
     let current = displayBox.innerHTML;
     let lastIndex = current[current.length - 1];
-
     if (displayBox.innerHTML == 0) {
         return displayBox.innerHTML = x;
     } else if (operator.includes(x) && operator.includes(lastIndex)) {
-        // console.log(current.substring(0, current.length - 1) + x);
+        console.log(current.substring(0, current.length - 1) + x);
         return displayBox.innerHTML = `${current.substring(0, current.length - 1)}${x}`;
     }
     return displayBox.innerHTML += x;
